@@ -1,0 +1,9 @@
+{
+	"name": "covid-deaths-data-factory",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "95cd74fa-05b1-42c7-9e21-6a52251b4deb",
+		"tenantId": "21ae9264-e046-4881-9ecf-83bcb88a1318"
+	}
+}
