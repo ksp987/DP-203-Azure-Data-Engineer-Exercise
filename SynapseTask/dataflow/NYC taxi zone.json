@@ -53,7 +53,7 @@
 				"     ignoreNoFilesFound: false) ~> TaxiNYC",
 				"TaxiNYC split(Borough==\"Queens\",",
 				"     and(Borough==\"Queens\", Zone==\"JFK Airport\"),",
-				"     ERROR_FUNCTION(''),",
+				"     not(and(Borough==\"Queens\", Zone==\"JFK Airport\")),",
 				"     disjoint: false) ~> split1@(QueensBorough, QueeensJFKairport, AllOther)",
 				"split1@QueensBorough sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
